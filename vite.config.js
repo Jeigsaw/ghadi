@@ -19,14 +19,20 @@ export default defineConfig({
         "orientation": "portrait-primary",
         "icons": [
             {
-                "src": "/ghadi/android-chrome-192x192.png",
-                "sizes": "192x192",
-                "type": "image/png"
+              "src": "/ghadi/android-chrome-192x192.png",
+              "sizes": "192x192",
+              "type": "image/png"
             },
             {
-                "src": "/ghadi/android-chrome-512x512.png",
-                "sizes": "512x512",
-                "type": "image/png"
+              "src": "/ghadi/android-chrome-512x512.png",
+              "sizes": "512x512",
+              "type": "image/png",
+            },
+            {
+              "src": "/ghadi/android-chrome-512x512.png",
+              "sizes": "512x512",
+              "type": "image/png",
+              "purpose": "maskable"
             }
         ],
         "theme_color": "#1a2825",
