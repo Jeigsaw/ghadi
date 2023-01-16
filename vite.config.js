@@ -29,8 +29,8 @@ export default defineConfig({
               "type": "image/png",
             },
             {
-              "src": "/ghadi/android-chrome-512x512.png",
-              "sizes": "512x512",
+              "src": "/ghadi/icon-max.png",
+              "sizes": "1024x1024",
               "type": "image/png",
               "purpose": "maskable"
             }
