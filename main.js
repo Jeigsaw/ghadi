@@ -1,5 +1,3 @@
-import $ from "https://cdn.skypack.dev/jquery@3.6.0";
-
 // This array contains all the segments required to make a full clock
 const pathArray = [
   "M 100 20 ",
@@ -22,9 +20,9 @@ const pathDataZeroHour = "M 95 21.339745962 Q 100 20 105 21.339745962 L 105 21.3
 
 // calculate path data function defintion
 function calcCurrentPathData(hourIndex){
-  var currentPathData = pathArray[0];
-  var position = 1;
-  var subgroupPosition = hourIndex;     
+  let currentPathData = pathArray[0];
+  let position = 1;
+  let subgroupPosition = hourIndex;     
   
   
   if (hourIndex != 0) {
@@ -47,7 +45,7 @@ function calcCurrentPathData(hourIndex){
 
 // document ready function begin
 
-$(document).ready(function (){
+document.addEventListener("DOMContentLoaded", function (){
   
   // get the path trace and the path itself
   let pathLine = document.querySelector("#path");
@@ -63,7 +61,7 @@ $(document).ready(function (){
     let currentMinutes = samaya.getMinutes();
     let currentSeconds = samaya.getSeconds();
     let currentHour = samaya.getHours()%12;
-    var currentTimeInterval = currentMinutes + currentSeconds/60;
+    const currentTimeInterval = currentMinutes + currentSeconds/60;
 
     
     // use the path data calculated acc to the hour and pass it to the svg paths
@@ -78,12 +76,12 @@ $(document).ready(function (){
 
   
     // making path traverse as each second passes
-    var dashArrayValue = currentOffset.toString() + ", "  + l.toString();
-    $(pathLine).css("stroke-dasharray", dashArrayValue);
+    const dashArrayValue = currentOffset.toString() + ", "  + l.toString();
+    pathLine.style.strokeDasharray =  dashArrayValue;
     
     // positioning bulb as each second passes
-    $(pathBulb).css("stroke-dasharray", ".25 ," +  l );
-    $(pathBulb).css("stroke-dashoffset", "-"+currentOffset);
+    pathBulb.style.strokeDasharray =  ".25 ," +  l;
+    pathBulb.style.strokeDashoffset = "-"+currentOffset;
     
   
   }, 1000); // setInterval
@@ -92,15 +90,15 @@ $(document).ready(function (){
 }); // document ready function
 
 
-const infoIcon = $('#info');
-const closeIcon = $('#closeInfo');
-const modal = $('section.modal');
+const infoIcon = document.querySelector('#info');
+const closeIcon = document.querySelector('#closeInfo');
+const modal = document.querySelector('.modal');
 
-infoIcon.click(()=>{
-  modal.css('display', 'block');
+infoIcon.addEventListener("click", ()=>{
+  modal.style.display = 'block';
 });
-closeIcon.click(()=>{
-  modal.css('display', 'none');
+closeIcon.addEventListener("click", ()=>{
+  modal.style.display = 'none';
 })
 
 
