@@ -30,13 +30,34 @@
       </div>
         
       <!--  Info button  -->
-      <div id="info" title="Details about the clock">
-        <svg id = "infoIcon" width="100%" height="100%" viewBox="0 0 284 283" xml:space="preserve" fill="none" stroke-width="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+      <div id="infoIcon" title="Details about the clock">
+        <svg id = "icon" width="100%" height="100%" viewBox="0 0 284 283" xml:space="preserve" fill="none" stroke-width="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="66.77" cy="66.77" r="48"/>
           <circle cx="66.77" cy="215.533" r="48" />
           <circle cx="216.487" cy="66.77" r="48" />
           <circle cx="216.487" cy="215.533" r="48" />
         </svg>
+      </div>
+
+      <div id="infoModal">
+        <div id="clickArea">
+        </div>
+        <div id="infoMenu">
+          <h3>Customize</h3>
+          <div class="inputBox">
+            <label>
+              Width
+              <input type="number" min="1" max="6">
+            </label>
+          </div>
+          <div class="inputBox">
+            <label>
+              Color
+              <input type="color">
+            </label>
+          </div>
+        </div>
+
       </div>
         
         
@@ -44,7 +65,7 @@
 
     <!-- Info section -->
     <section class="modal">
-      <main class="infoModal">
+      <main>
         <h2>A Tale of &#8484;<sub>12</sub> cyclic group.</h2>
         <p> We will start with the ordinary way of telling time from clocks like the one shown below.</p>
         <div class="clocks">
