@@ -16,13 +16,13 @@ export function handleMenu (){
 
   const infoIcon = document.querySelector('#infoIcon');
   const overlay = document.querySelector('#clickArea');
-  infoIcon.addEventListener("click", () => {
-    const infoModal = document.querySelector('#infoModal');
-    infoModal.style.display = 'block';
-  } );
-  overlay.addEventListener("click", ()=>{
-    const infoModal = document.querySelector('#infoModal');
-    infoModal.style.display = 'none';
-  });
+  // infoIcon.addEventListener("click", () => {
+  //   const infoModal = document.querySelector('#infoModal');
+  //   infoModal.style.display = 'block';
+  // } );
+  // overlay.addEventListener("click", ()=>{
+  //   const infoModal = document.querySelector('#infoModal');
+  //   infoModal.style.display = 'none';
+  // });
 
 }
