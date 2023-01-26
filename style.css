@@ -46,7 +46,7 @@ h2, p{
   transition: all 0.2s ease-in-out;
 }
 .viewbox.menuOpened{
-  transform: scale(0.9) translateY(-30px);
+  transform: scale(0.8) translateY(-30px);
 }
 
 svg .shapes{
@@ -102,7 +102,6 @@ svg #bulb{
   bottom: 0;
   width: 100%;
   height: 100%;
-  /* display: none; */
   z-index: 2;
   visibility: visible;
   transition: all 0.2s ease-in-out;
@@ -117,20 +116,18 @@ svg #bulb{
 #modal #overlay{
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 #container{
   width: 100%;
   background-color: #102a35;
   border-radius: 55px 55px 0 0;
   position: absolute;
-  bottom: 0;
   z-index: 2;
-  animation: slide 0.2s ease-in;
+  top: 100%;
+  transition: top 0.2s ease-in;
 }
 
-#modal[aria-hidden="true"] #container{
-  bottom: -75vh;
-}
 
 #container .controls{
   padding: 5px 0;
@@ -145,6 +142,7 @@ svg #bulb{
 #container .main{
   padding: 1rem 1.5rem;
   color: #6e8189;
+  user-select: none;
 }
 
 .main h4{
@@ -187,7 +185,7 @@ svg #bulb{
 
 
 footer{
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: right;
   font-size: 0.7rem;
   font-style: italic;
@@ -290,7 +288,7 @@ button#closeInfo:hover{
   }
 
   .screen{
-    width: 320px;
+    width: 360px;
     margin: 0 auto;
     border-radius: 20px;
     border: groove 3px #3f3b3b;
@@ -322,7 +320,7 @@ button#closeInfo:hover{
     height: 260px;
   }
 
-  #info{
+  #infoIcon{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
