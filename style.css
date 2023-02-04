@@ -51,11 +51,11 @@ h2, p{
 
 svg .shapes{
   fill: transparent;
-  stroke-width: 3px;
+  /* stroke-width: 3px; */
   stroke-linecap: round;
   stroke-linejoin: round;
   border-radius: 50%;
-  stroke: #b9d6e2;
+  /* stroke: #b9d6e2; */
 }
 
 svg #trace{
@@ -68,7 +68,7 @@ svg #path{
 
 svg #bulb{
   opacity: 1;
-  stroke-width: 10px;
+  /* stroke-width: 10px; */
 }
 
 
@@ -167,8 +167,10 @@ svg #bulb{
 
 .inputBox input{
   background-color: transparent;
-  border: 1px solid #b9d6e2;
+  border: 1px solid #546d77;
   border-width: 0 0 1px;
+  color: #849ea9;
+  line-height: 1.3rem;
 }
 .inputBox input[type='color']{
   padding: 0;
@@ -176,13 +178,14 @@ svg #bulb{
 }
 .colorSelector{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   column-gap: 1rem;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: stretch;
 }
 
+.clr-field button{
+  border-radius: 8px;
+}
 
 footer{
   margin-top: 2rem;
@@ -288,7 +291,7 @@ button#closeInfo:hover{
   }
 
   .screen{
-    width: 360px;
+    width: 320px;
     margin: 0 auto;
     border-radius: 20px;
     border: groove 3px #3f3b3b;
@@ -321,11 +324,7 @@ button#closeInfo:hover{
   }
 
   #infoIcon{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 24px;
-    height: 24px;
+    display: none;
   }
 }
 

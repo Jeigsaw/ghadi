@@ -35,16 +35,16 @@ export function handleMenu (){
   });
 
   document.querySelector("#infoIcon").addEventListener("click", () => {
-    document.querySelector(".viewbox").classList.add("menuOpened");
     
     const screenHeight = document.querySelector('.screen').clientHeight;
     const sheetHeight = sheetContents.clientHeight;
-    let topValue;
+    // let topValue;
     if (screenHeight <= sheetHeight) {
-      topValue = 0;
-    } else{
-      topValue = screenHeight - sheetHeight;
+      return
     }
+    
+    const topValue = screenHeight - sheetHeight;
+    document.querySelector(".viewbox").classList.add("menuOpened");
     setSheetPosition(topValue);
 
     setIsSheetShown(true);
