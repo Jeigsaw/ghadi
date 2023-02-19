@@ -1,13 +1,3 @@
-// prolly not needed
-const infoMenu = document.querySelector('#infoMenu');
-let isMenuOpen = false;
-
-// prolly not needed
-const closeIcon = document.querySelector('#closeInfo');
-closeIcon.addEventListener("click", ()=>{
-  modal.style.display = 'none';
-})
-
 
 // open menu as a bottom sheet
 

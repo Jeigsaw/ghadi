@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     themeMode: "auto",
     theme: "polaroid",
     wrap: true,
-    defaultColor: '#b9d6e2'
+    defaultColor: '#b9d6e2',
+    focusInput: false
   });
 });
 
