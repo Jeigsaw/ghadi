@@ -3,9 +3,11 @@ import { handleMenu } from './src/menu';
 
 import "@melloware/coloris/dist/coloris.css";
 import { coloris, init as colorisInit } from "@melloware/coloris";
-import Alpine from 'alpinejs'
+import Alpine from 'alpinejs';
+import persist from '@alpinejs/persist';
  
 // window.Alpine = Alpine;
+Alpine.plugin(persist);
 Alpine.start();
 colorisInit();
 

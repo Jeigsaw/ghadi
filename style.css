@@ -1,8 +1,6 @@
 :root {
   font-family: 'Inter', Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgb(154 160 160);
@@ -33,7 +31,8 @@ h2, p{
 .screen{
   display: flex;
   justify-content: space-between;
-  background: url(/back.png);
+  background-color: #0d1311;
+  background: url(/background.png);
   background-size: cover;
   height: 100vh;
   flex-direction: column;
@@ -94,7 +93,7 @@ svg #bulb{
 }
 
 #infoIcon #icon{
-  stroke: #92b5c6;
+  stroke: #46615b;
   border: none;
   filter: drop-shadow(0px 0px 6px #b1cdd9a3);
 }
@@ -124,7 +123,7 @@ svg #bulb{
 }
 #container{
   width: 100%;
-  background-color: #102a35;
+  background-color: #131a19;
   border-radius: 55px 55px 0 0;
   position: absolute;
   z-index: 2;
@@ -145,7 +144,8 @@ svg #bulb{
 
 #container .main{
   padding: 1rem 1.5rem;
-  color: #6e8189;
+  padding-top: 2.5rem;
+  color: #829794;
   user-select: none;
 }
 
@@ -162,20 +162,20 @@ svg #bulb{
 }
 
 .inputBox label{
-  border: 1px solid #2b4752;
+  border: 1px solid #272e2d;
   padding: 2rem;
   border-radius: 20px;
   display: flex;
   row-gap: 1rem;
   flex-direction: column;
-  accent-color: #6f8d99;
+  accent-color: #7c9a96;
 }
 
 .inputBox input{
   background-color: transparent;
   border: 1px solid #546d77;
   border-width: 0 0 1px;
-  color: #849ea9;
+  color: #829794;
   line-height: 1.3rem;
 }
 .inputBox .colorInput{
@@ -210,7 +210,7 @@ footer{
   border: none;
   border-bottom: 1px dashed transparent;
   background-color: transparent;
-  color: #9eb9c4;
+  color: #94b2ae;
   font-size: 0.8rem;
   cursor: pointer;
 }
@@ -220,7 +220,7 @@ footer{
 
 .jeigsaw{
   cursor: pointer;
-  fill: #26414c;
+  fill: #465957;
   transition: all 0.1s ease-in;
 }
 .jeigsaw:hover{

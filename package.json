@@ -19,6 +19,7 @@
     "vite-plugin-pwa": "^0.14.1"
   },
   "dependencies": {
+    "@alpinejs/persist": "^3.11.1",
     "@melloware/coloris": "^0.17.1",
     "alpinejs": "^3.11.1"
   }
