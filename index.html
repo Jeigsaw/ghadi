@@ -19,13 +19,13 @@
     
     <title>Ghadi Home</title>
     <meta name="description" content="A clock without numbers">
-    <script type="module" crossorigin src="/ghadi/assets/main-26507d69.js"></script>
+    <script type="module" crossorigin src="/ghadi/assets/main-8e6d415c.js"></script>
     <link rel="stylesheet" href="/ghadi/assets/index-10500df8.css">
-    <link rel="stylesheet" href="/ghadi/assets/style-1ac6f71c.css">
+    <link rel="stylesheet" href="/ghadi/assets/style-9c4528a3.css">
   <link rel="manifest" href="/ghadi/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/ghadi/registerSW.js"></script></head>
 
   <body class="ghadiContainer">
-    <div class="screen" x-data="{ color: '#b9d6e2', width: '3', get bulbWidth(){return 2*this.width + 4}}">
+    <div class="screen" x-data="{ color: $persist('#b9d6e2'), width: $persist('3'), get bulbWidth(){return 2*this.width + 4}}">
       <div class="viewbox">
         <svg width="100%" height="100%" viewBox='0 0 200 200' x-bind:stroke="color">
           <path class="shapes" id="path"  d="" x-bind:stroke-width="width"/>
@@ -49,9 +49,9 @@
         <div id="overlay"></div>
 
         <div id="container">
-          <section class="controls">
+          <!-- <section class="controls">
             <hr/>
-          </section>
+          </section> -->
 
           <section class="main">
             <h4>Customize</h4>
